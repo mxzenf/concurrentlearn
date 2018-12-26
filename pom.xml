@@ -19,6 +19,7 @@
 		<!--公用基本包-->
         <commons-logging.version>1.2</commons-logging.version>
 		<commons-io.version>2.4</commons-io.version>
+		<commons-lang3.version>3.3.2</commons-lang3.version>
         <!--日志包-->
         <log4j.version>1.2.17</log4j.version>
 	</properties>
@@ -36,6 +37,12 @@
 			<artifactId>commons-logging</artifactId>
 			<version>${commons-logging.version}</version>
 		</dependency>
+		
+		<dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+            <version>${commons-lang3.version}</version>
+        </dependency>
 
 		<!--日志log4j -->
 		<dependency>
