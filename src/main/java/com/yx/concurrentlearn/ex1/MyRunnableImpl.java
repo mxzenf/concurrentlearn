@@ -43,6 +43,9 @@ public class MyRunnableImpl implements Runnable {
     for (int i = 0; i < 5; i++) {
       new Thread(new MyRunnableImpl(String.valueOf(i))).start();
     }
+    for (int i = 5; i < 10; i++) {
+      new Thread(() -> System.out.println("线程[" + Thread.currentThread().getName() + "]")).start();
+    }
   }
 
 }
